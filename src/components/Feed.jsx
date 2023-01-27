@@ -40,7 +40,7 @@ const Feed = ({setNoConnection,noConnection}) => {
         }).catch((err)=>{setNoConnection(true);})
     }
 
-  },[categoryId])
+  },[categoryId,noConnection,setNoConnection])
 
   // console.log(noConnection)
   

@@ -34,7 +34,7 @@ const Search = ({searchTerm,noConnection,setNoConnection}) => {
       .catch((err)=>{setNoConnection(true);  setLoading(false)});
       // console.log('iam');
     };
-  },[searchTerm]);
+  },[searchTerm,setNoConnection]);
    
   // console.log(nocon)
  
