@@ -1,6 +1,6 @@
 {
-  "short_name": "Photo share",
-  "name": "Share with us",
+  "short_name": "React App",
+  "name": "Create React App Sample",
   "icons": [
     {
       "src": "favicon.ico",
