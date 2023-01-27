@@ -125,7 +125,8 @@ const PinDetails = ({ user }) => {
               {
                 user ? (
                   <>
-                    <Link to={`/user-profile/${user?.picture}`} className='gap-2 items-center bg-white dark:bg-gray-900 rounded-full' >
+                    <Link to={`/user-profile/${user?.picture}`}
+                    referrerPolicy='no-referrer' className='gap-2 items-center bg-white dark:bg-gray-900 rounded-full' >
                       <img className='w-10 h-10 rounded-full object-cover border-2 border-black border-solid' src={user?.image} alt='user' />
                     </Link>
                   </>) : (<><FaUser onClick={() => alert('Please login')} /></>)
@@ -138,7 +139,7 @@ const PinDetails = ({ user }) => {
               onChange={(e) => setComment(e.target.value)}
             />
             <button type='button' onClick={addComment} className='bg-blue-700 text-white rounded-full px-3 py-3 font-semibold text-base outline-none'>
-              {addingComment ? 'Posting the comment' : (<><FiSend className='bg-blue-700 text' fontSize={20} /></>)}
+              {addingComment ? 'Posting' : (<><FiSend className='bg-blue-700 text' fontSize={20} /></>)}
             </button>
           </div>
 
